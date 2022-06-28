@@ -32,6 +32,11 @@ Form {
 	color: white; 
 	background-color: green}
 
+center{
+	width: 500px;
+	height: 500px;
+}
+
 
 /* Desktop*/
 @media screen and (max-width:1500px){
@@ -97,11 +102,13 @@ Form {
 	}
 
 	table{
-		width: 50%; 
+		width: 500px; 
+		height: 500px; 
 	}
 
 	center{
-		width: 50%;
+		width: 500px;
+		height: 500px;
 	}
  }
  
@@ -132,11 +139,13 @@ Form {
 	}
 
 	table {
-		width: 10%; 
+		width: 100px; 
+		height: 100px; 
 	}
 
 	center{
-		width: 10%;
+		width: 100px;
+		height: 100px;
 	}
  
  }

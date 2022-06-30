@@ -1,0 +1,158 @@
+A:link {color: rgb(255, 255, 255)}
+A:visited, A:active {color: teal}
+A:hover {text-decoration: s; color: teal}
+
+Body {
+	background-color: rgb(255, 255, 255);
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(0, 0, 0)
+}
+
+H1 {font-size: 25pt; text-align: center}
+H2 {font-size: 25pt; text-align: right; font-family: Arial, Helvetica, sans-serif; background-color: black; color: white;}
+H5{font-size: 25pt; text-align: center;}
+
+
+p{font-size: 15pt; text-align: center; font-family: Arial, Helvetica, sans-serif;}
+
+
+center{
+	position: relative;
+	align-items: center;
+}
+
+#veggies{
+    position: relative;
+    left: 535px; 
+}
+
+#farm-to-fork{
+    position: relative;
+	text-align: center;
+    margin-top: 50px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#farm-to-table{
+    position: relative;
+	text-align: center;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Desktop*/
+@media only screen and (max-width:2000px){
+    #veggies{
+        position: relative;
+        align-items: center;
+        max-width: 1000px;
+    }
+ }
+
+ 
+
+ /*Tablets*/
+ @media only screen and (max-width:800px){
+	H2{
+		font-size: 10pt;
+		text-align: left;
+	}
+    
+
+	H4{
+		font-size: 10pt;
+		text-align: left;
+		top: 500px; 
+	}
+
+    H5{
+        font-size: 15pt; text-align: center;
+    }
+
+    p{
+        font-size: 10pt; text-align: center; font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #veggies{
+        position: relative;
+        align-items: center;
+        max-width: 1000px;
+    }
+
+    .logo-img{
+		position: relative;
+		max-width: 300px;
+	}
+
+
+    #farm-to-fork{
+        position: relative;
+        text-align: center;
+        bottom: 50px;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #farm-to-table{
+        position: relative;
+        text-align: center;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        bottom: 40px;
+    }
+ }
+ 
+ /* Phones*/
+ @media only screen and (max-width: 750px) {
+	H2{
+		font-size: 10pt;
+		text-align: left;
+	}
+    
+
+	H4{
+		font-size: 10pt;
+		text-align: left;
+		top: 500px; 
+	}
+
+    H5{
+        font-size: 15pt; text-align: center;
+    }
+
+    p{
+        font-size: 10pt; text-align: center; font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .logo-img{
+		position: relative;
+		max-width: 300px;
+	}
+
+    
+
+    #farm-to-fork{
+        position: relative;
+        text-align: center;
+        bottom: 50px;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #farm-to-table{
+        position: relative;
+        text-align: center;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        bottom: 40px;
+    }
+    
+    #veggies{
+        position: relative;
+        align-items: center;
+        max-width: 1000px;
+    }
+
+
+ }

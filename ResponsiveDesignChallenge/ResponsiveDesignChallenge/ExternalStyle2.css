@@ -1,151 +1,187 @@
 
 A:link {color: gray}
-A:visited, A:active {color: green}
-A:hover {text-decoration: overline; color: teal}
+A:visited, A:active {color: rgb(255, 255, 255)}
+A:hover {text-decoration: s; color: teal}
 	
 Body {
-	background-color: white;
-	font-family: cambria;
-	color: gray	
+	background-color: rgb(0, 0, 0);
+	font-family: Arial, Helvetica, sans-serif;
+	color: gray
 	}
 
 H1 {font-size: 50pt; text-align: right}
-H2 {font-size: 25pt; text-align: right}
+H2 {font-size: 25pt; text-align: right; font-family: Arial, Helvetica, sans-serif; background-color: black; color: white;}
 H3 {font-size: 10pt; text-align: center}
-H4 {text-align: center}
+H4 {font-size: 10pt; text-align: center; color: white;}
 H5 {font-size: 15pt}
 
 P {font-size: 10pt; font-family: monospace}
 
 Table {
 	width: 400px; 
-	font-family: monospace; 
-	color: white; 
-	background-color: green;
-	margin: .8em;
-	border-color: darkgreen}
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+	color: rgb(255, 255, 255); 
+	background-color: rgb(124, 124, 124);
+	margin: 5px;
+	border-color: rgb(255, 255, 255)}
 
 
 Form {
-	font-family: monospace; 
+	font-family:Georgia, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	text-align: center; 
-	color: white; 
-	background-color: green}
+	color: rgb(255, 255, 255); 
+	background-color: rgb(134, 160, 117)
+}
+	
+H4{
+	position:relative; 
+	top: 450px; 
+	color:white;
+	font-size: large;
+}
 
-center{
-	width: 500px;
-	height: 500px;
+#center{
+	position: relative;
+	top: 200px; 
+	right: 0px; 
+	z-index: 1;
+	
+}
+
+.logo-img{
+	background-position: center;
+	position: relative;
+	z-index: 1;
 }
 
 
+.hero-img{
+  height: 100%;
+  top: 0px;
+  position: relative;
+  background-position: center;
+}
+
+.hero-img{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+	url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8&w=1000&q=80');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 80%;
+	opacity: 1;
+	position: relative; 
+	top: -573px;
+  }
+
+
+
+
 /* Desktop*/
-@media screen and (max-width:1500px){
-	H1{
-		font-size: 50pt; 
+@media only screen and (max-width:2000px){
+	
+
+
+	Table{
+		position: relative;
+		max-width: 100%;
 	}
 
-	H2{
-		font-size: 25pt;
+	Form{
+		position: relative;
+		max-width: 100%;
 	}
 
-	H3{
-		font-size: 10pt;
-	}
-
-	H4{
-		font-size: 10pt;
-		text-align: center;
-	}
-
-	H5{
-		font-size: 15;
-	}
-
-	body{
-		width:auto
-	}
-
-	table{
-		width: auto; 
-	}
-
-	center{
-		width: auto;
-	}
  }
+
  
 
  /*Tablets*/
- @media screen and (max-width:1000px){
-	H1{
-		font-size: 30pt; 
-	}
-
+ @media only screen and (max-width:800px){
 	H2{
 		font-size: 15pt;
-	}
-
-	H3{
-		font-size: 5pt;
+		text-align: center;
 	}
 
 	H4{
+		font-size: 15pt;
+		text-align: center;
+	}
+
+	.logo-img{
+		background-position: left;
+		position: relative;
+		max-width: 75%;
+		max-height: 75%; 
+	}
+
+	.hero-img{
+		height: 500pt;
+		top: -560px;
+		position: relative;
+		background-position: center;
+		
+	}
+
+	#rev{
 		font-size: 5pt;
 	}
 
-	H5{
-		font-size: 15;
+	Table{
+		position: relative;
+		max-width: 800px;
+		max-height: 100%;
 	}
 
-	body{
-		width: 50%; 
-	}
-
-	table{
-		width: 500px; 
-		height: 500px; 
-	}
-
-	center{
-		width: 500px;
-		height: 500px;
+	Form{
+		position: relative; 
+		max-width: 800px;
+		max-height: 100%;
 	}
  }
  
  /* Phones*/
- @media screen and (max-width: 700px) {
-	H1{
-		font-size: 10pt; 
-	}
-
+ @media only screen and (max-width: 750px) {
 	H2{
 		font-size: 10pt;
-	}
-
-	H3{
-		font-size: 5pt;
+		text-align: left;
 	}
 
 	H4{
+		font-size: 10pt;
+		text-align: left;
+		top: 500px; 
+	}
+
+	#rev{
 		font-size: 5pt;
+		text-align: left;
 	}
 
-	H5{
-		font-size: 10;
+	.logo-img{
+		position: relative;
+		max-width: 300px;
+		top: -70pt;
 	}
 
-	body{
-		width:10%; 
+	.hero-img{
+		height: 300pt;
+		top: -400px;
+		position: relative;
+		background-position: center;
+		
 	}
 
-	table {
-		width: 100px; 
-		height: 100px; 
+	Table{
+		position: relative;
+		background-position: center;
+		max-width: 700px;
+		max-height: 100%;
 	}
 
-	center{
-		width: 100px;
-		height: 100px;
+	Form{
+		position: relative; 
+		max-width: 700px;
+		max-height: 100%;
 	}
- 
+
  }
